@@ -19,13 +19,13 @@ const TopNavbar = () => {
         {/*-----------Social----------*/}
         <div className="">
           <div className="flex gap-4">
-            <Link>
+            <Link to="https://www.facebook.com/">
               <i className="fa-brands fa-facebook text-3xl text-[#fa4604]"></i>
             </Link>
-            <Link>
+            <Link to="https://x.com">
               <i className="fa-brands fa-twitter text-3xl text-[#fa4604]"></i>
             </Link>
-            <Link>
+            <Link to="https://www.instagram.com/">
               <i className="fa-brands fa-instagram text-3xl text-[#fa4604]"></i>
             </Link>
           </div>

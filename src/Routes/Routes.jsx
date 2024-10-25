@@ -18,6 +18,7 @@ import Order from "../Pages/Dashboard/Order/Order";
 import ManageBooking from "../Pages/AdminDashboard/ManageBooking/ManageBooking";
 import OurOffers from "../Pages/OurOffers/OurOffers";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+import CustomerSupport from "../Pages/AdminDashboard/CustomerSupport/CustomerSupport";
 
 
 const router = createBrowserRouter([
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
         path: "updateMenu/:id",
         element: <UpdateMenu></UpdateMenu>,
         loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
+       },
+       {
+        path: "customerSupport",
+        element: <CustomerSupport></CustomerSupport>
        },
     ]
 

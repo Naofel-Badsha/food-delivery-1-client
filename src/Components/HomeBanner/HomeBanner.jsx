@@ -10,7 +10,7 @@ const HomeBanner = () => {
     <div className="bg-gradient-to-r from-[#fafafa] form-0% to-[#fcfcfc] to-100%">
       <div className="py-24 px-6 container m-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
         {/*------------img-------1--------*/}
-        <div className="md:w-1/2" data-aos="fade-right">
+        <div className="md:w-1/2 overflow-hidden" data-aos="fade-right">
           <img src="https://i.ibb.co/nR4t9MH/fbb-1.png" className="w-full" />
 
           <div className="flex items-center justify-center -mt-10 ">
@@ -55,7 +55,7 @@ const HomeBanner = () => {
           </div>
         </div>
         {/*------------Text-------1--------*/}
-        <div className="md:w-1/2" data-aos="fade-left">
+        <div className="md:w-1/2 overflow-hidden" data-aos="fade-left">
           <h2 className="text-4xl text-black md:text-5xl font-bold md:leading-tight leading-tight">
             Drive into Delights of Delectable{" "}
             <span className="text-[#fa4604]">Food🥦🌰</span>

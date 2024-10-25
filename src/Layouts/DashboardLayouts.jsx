@@ -36,7 +36,7 @@ const DashboardLayouts = () => {
         </Link>
       </li>
       <li>
-        <Link to="/">
+        <Link to="/customerSupport">
           <FaQuestionCircle />
           Customer Support
         </Link>

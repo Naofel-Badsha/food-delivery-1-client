@@ -54,6 +54,7 @@ const ManageBooking = () => {
 
   return (
     <div className="px-4">
+      {/*---------Heading---------*/}
       <h2 className="text-2xl font-bold text-black py-2">
         Manage <span className="text-[#ff2200]">Booking</span>
       </h2>
