@@ -12,7 +12,7 @@ const TopNavbar = () => {
         {/*-----------Searce----------*/}
         <div className="w-full">
           <label className="input bg-[#4d5b6f] text-xl text-white input-bordered flex items-center gap-2">
-            <input type="search" className="grow w-full" placeholder="Search" />
+            <input type="search" className="grow w-full" placeholder="Search " />
             <i className="fa-solid fa-magnifying-glass text-2xl text-[#fa4604]"></i>
           </label>
         </div>

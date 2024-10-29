@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const ManageItems = () => {
   const [menu, refetch] = useManageItemsMenu();
-  //   console.log(menu);
+
 
   //----------hendleDeleteItem------------
   const hendleDeleteItem = (item) => {
@@ -78,10 +78,11 @@ const ManageItems = () => {
                         </div>
                       </div>
                     </div>
+                    
                   </td>
                   <td className="text-[18px] text-black">{item.name}</td>
                   <td className="text-[18px] text-black">{item.category}</td>
-                  <td className="text-[18px] text-black">{item.price}</td>
+                  <td className="text-[18px] text-black">$: {item.price}</td>
                   <th>
                     <Link to={`/updateMenu/${item._id}`}>
                       <button className="btn bg-sky-800 border-0">

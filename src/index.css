@@ -6,10 +6,10 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
- 
   color-scheme: light dark;
-
   background-color: #fff;
-
-
 }
+body{
+  overflow-x: hidden;
+}
+

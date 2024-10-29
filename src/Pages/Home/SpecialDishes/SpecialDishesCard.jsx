@@ -81,15 +81,16 @@ const SpecialDishesCard = ({ item }) => {
             <i className="fa-solid fa-heart text-3xl cursor-pointer"></i>
           </div>
           {/*------------Eye-----------*/}
-          <Link to={`/menu/${item._id}`}>
+          {/* to={`/menu/${item._id}`} */}
+          <Link>
             <div className="gap-1 top-2 p-4">
               <i className="fa-solid fa-eye text-3xl text-sky-700 cursor-pointer"></i>
             </div>
           </Link>
         </div>
 
-        <figure className="w-full h-[270px] m-auto">
-          <img src={item.image} className="object-cover w-full h-[270px]" />
+        <figure className="w-full h-[300px] m-auto">
+          <img src={item.image} className="object-cover w-full h-[300px]" />
         </figure>
 
         <div className="card-body">

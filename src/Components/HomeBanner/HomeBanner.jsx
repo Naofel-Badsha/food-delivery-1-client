@@ -1,11 +1,12 @@
 import React from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const HomeBanner = () => {
   useEffect(() => {
-    AOS.init({duration: "2000"}) 
-  },[])
+    AOS.init({ duration: "2000" });
+  }, []);
   return (
     <div className="bg-gradient-to-r from-[#fafafa] form-0% to-[#fcfcfc] to-100%">
       <div className="py-24 px-6 container m-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
@@ -65,9 +66,11 @@ const HomeBanner = () => {
             Craftsmanship
           </p>
           <div className="py-4">
-            <btton className="btn border-0 bg-[#fa4604] text-xl text-white">
-              Order Now
-            </btton>
+            <Link to="/menu">
+              <btton className="btn border-0 bg-[#fa4604] text-xl text-white">
+                Order Now
+              </btton>
+            </Link>
           </div>
         </div>
       </div>

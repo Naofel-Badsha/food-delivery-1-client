@@ -75,7 +75,7 @@ const DashboardLayouts = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu bg-sky-950 min-h-full text-xl text-white w-56 md:w-80 lg:w-80 p-4 gap-6">
+          <ul className="menu bg-sky-950 h-screen text-xl text-white w-56 md:w-80 lg:w-80 p-4 gap-6">
             {/* Sidebar content here */}
             <div>
               <Link to="updateProfile">

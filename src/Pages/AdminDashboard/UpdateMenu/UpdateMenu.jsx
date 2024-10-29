@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const UpdateMenu = () => {
   const item = useLoaderData();
-  console.log(item);
+  const navigate = useNavigate()
 
   const { register, handleSubmit } = useForm();
 
@@ -37,6 +37,7 @@ const UpdateMenu = () => {
           });
         }
       });
+      navigate("/manageItems")
   };
   return (
     <div className="p-4">

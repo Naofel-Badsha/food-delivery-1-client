@@ -33,20 +33,7 @@ const Navbar = () => {
       </li>
       {/*-----------Dropdown-------2-------*/}
       <li>
-        <details>
-          <summary>Services</summary>
-          <ul className=" bg-white shadow-lg shadow-black rounded-md">
-            <li>
-              <Link>Online Order</Link>
-            </li>
-            <li className="py-4">
-              <Link>Table Booking</Link>
-            </li>
-            <li>
-              <Link>Order Tracking</Link>
-            </li>
-          </ul>
-        </details>
+      <Link to="/customerServices">Services</Link>
       </li>
       <li>
         <Link to="/offer">Offers</Link>

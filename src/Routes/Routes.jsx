@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayouts from "../Layouts/RootLayouts";
 import Home from "../Pages/Home/Home/Home";
 import Menu from "../Pages/Shoping/Menu/Menu";
+import CustomerServices from "../Pages/CustomerServices/CustomerServices";
 import SingUp from './../Pages/SingUp/SingUp';
 import LoginModal from './../Pages/LoginModal/LoginModal';
 import PrivateRoute from "./PrivateRoute";
@@ -21,6 +22,7 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import CustomerSupport from "../Pages/AdminDashboard/CustomerSupport/CustomerSupport";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/menu",
         element: <PrivateRoute><Menu></Menu></PrivateRoute>
+      },
+      {
+        path: "/customerServices",
+        element: <CustomerServices></CustomerServices>
       },
       {
         path: "/offer",
