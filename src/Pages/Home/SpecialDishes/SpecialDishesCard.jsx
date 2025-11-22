@@ -30,7 +30,7 @@ const SpecialDishesCard = ({ item }) => {
         email: user.email,
       };
       // console.log(cartItem)
-      fetch("http://localhost:5000/carts", {
+      fetch("https://food-delivery-1-server.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -68,7 +68,7 @@ const SpecialDishesCard = ({ item }) => {
   };
 
   return (
-    <div>
+    <section>
       <div className="card card-compact bg-white shadow-xl relative border-2 hover:-translate-y-2 duration-200">
         <div className="flex items-center justify-between">
           {/*------------Heart-----------*/}
@@ -110,7 +110,7 @@ const SpecialDishesCard = ({ item }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

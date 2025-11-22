@@ -4,14 +4,14 @@ import useCart from "../../../Hooks/useCart";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const CartPage = () => {
   useEffect(() => {
-    AOS.init({duration: "2000"}) 
-  },[])
+    AOS.init({ duration: "2000" });
+  }, []);
 
   const [cart, refetch] = useCart();
   // console.log(cart)
@@ -34,7 +34,7 @@ const CartPage = () => {
   //--------handleIncreass-----Function------
   const handleIncreass = (item) => {
     // console.log(item._id)
-    fetch(`http://localhost:5000/carts/${item._id}`, {
+    fetch(`https://food-delivery-1-server.vercel.app/carts/${item._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -63,7 +63,7 @@ const CartPage = () => {
   const handleDecreass = (item) => {
     //  console.log(item._id)
     if (item.quantity > 1) {
-      fetch(`http://localhost:5000/carts/${item._id}`, {
+      fetch(`https://food-delivery-1-server.vercel.app/carts/${item._id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
@@ -109,7 +109,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/carts/${item._id}`, {
+        fetch(`https://food-delivery-1-server.vercel.app/carts/${item._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

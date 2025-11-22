@@ -46,14 +46,14 @@ const Navbar = () => {
   return (
     <>
       <TopNavbar></TopNavbar>
-      <div className="bg-white container sticky inset-0 z-10  w-full max-w-full rounded-none border  bg-opacity-30 py-2 px-4 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-2 lg:py-2">
-        <div className="navbar container m-auto">
+      <div className="bg-white container sticky inset-0 z-10  w-full max-w-full rounded-none border  bg-opacity-30  px-4 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 ">
+        <div className="navbar container  m-auto">
           <div className="navbar-start">
             <div className="dropdown">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost lg:hidden"
+                className="hover:text-[#fa4604] lg:hidden"
               >
                 <i className="fa-solid fa-bars text-3xl"></i>
               </div>

@@ -1,14 +1,14 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const OurServices = () => {
   useEffect(() => {
-    AOS.init({duration: "2000"}) 
-  },[])
+    AOS.init({ duration: "2000" });
+  }, []);
 
   return (
-    <div className="container m-auto px-6 py-16">
+    <section className="container m-auto px-6 py-16">
       <div className="flex flex-col md:flex-row items-center justify-center gap-12  ">
         {/*--------------1--------------*/}
         <div className="md:w-1/2" data-aos="fade-right">
@@ -34,31 +34,47 @@ const OurServices = () => {
             {/*----------Cart---------1------*/}
             <div className="text-center shadow-md rounded-sm py-5 px-4 cursor-pointer border-2 hover:border-[#fa4604] transition-all duration-200">
               <i className="fa-solid fa-bowl-rice text-5xl text-[#fa4604]"></i>
-              <h5 className="font-semibold text-[#fa4604] text-xl py-3">Catering</h5>
-              <p className="text-[#713d2a]">Deligght your guests width our flavors and presntation</p>
+              <h5 className="font-semibold text-[#fa4604] text-xl py-3">
+                Catering
+              </h5>
+              <p className="text-[#713d2a]">
+                Deligght your guests width our flavors and presntation
+              </p>
             </div>
             {/*----------Cart---------2------*/}
             <div className="text-center shadow-md rounded-sm py-5 px-4 cursor-pointer border-2 hover:border-[#fa4604] transition-all duration-200">
               <i className="fa-solid fa-clock-rotate-left text-5xl text-[#fa4604]"></i>
-              <h5 className="font-semibold text-[#fa4604] text-xl py-3">First delivery</h5>
-              <p className="text-[#713d2a]">We deliver your order promptly to your door</p>
+              <h5 className="font-semibold text-[#fa4604] text-xl py-3">
+                First delivery
+              </h5>
+              <p className="text-[#713d2a]">
+                We deliver your order promptly to your door
+              </p>
             </div>
             {/*----------Cart---------3------*/}
             <div className="text-center shadow-md rounded-sm py-5 px-4 cursor-pointer border-2 hover:border-[#fa4604] transition-all duration-200">
               <i className="fa-solid fa-cart-shopping text-5xl text-[#fa4604]"></i>
-              <h5 className="font-semibold text-[#fa4604] text-xl py-3">Online ordering</h5>
-              <p className="text-[#713d2a]">Explore menu & order with case using our online ordering</p>
+              <h5 className="font-semibold text-[#fa4604] text-xl py-3">
+                Online ordering
+              </h5>
+              <p className="text-[#713d2a]">
+                Explore menu & order with case using our online ordering
+              </p>
             </div>
             {/*----------Cart---------4------*/}
             <div className="text-center shadow-md rounded-sm py-5 px-4 cursor-pointer border-2 hover:border-[#fa4604] transition-all duration-200">
               <i className="fa-solid fa-gift text-5xl text-[#fa4604]"></i>
-              <h5 className="font-semibold text-[#fa4604] text-xl py-3">Gift Cards</h5>
-              <p className="text-[#713d2a]">Give the gift of accept Sonal dining with food gift cards</p>
+              <h5 className="font-semibold text-[#fa4604] text-xl py-3">
+                Gift Cards
+              </h5>
+              <p className="text-[#713d2a]">
+                Give the gift of accept Sonal dining with food gift cards
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

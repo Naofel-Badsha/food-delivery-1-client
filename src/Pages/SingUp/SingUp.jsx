@@ -25,7 +25,7 @@ const SingUp = () => {
     console.log(email, password)
    //------Posted--And--Creadt--user--by--Database-----
     const users = {name, email}
-    fetch("http://localhost:5000/users", {
+    fetch("https://food-delivery-1-server.vercel.app/users", {
       method: "POST",
       headers: {
         "content-type": "application/json",

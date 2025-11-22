@@ -84,7 +84,7 @@ const CheckoutForm = ({ price, cart }) => {
       };
       console.log(paymentInfo);
       //----Send---information----By----Database-------
-      fetch("http://localhost:5000/payments", {
+      fetch("https://food-delivery-1-server.vercel.app/payments", {
         method: "POST",
         headers: {
           "content-type": "application/json",

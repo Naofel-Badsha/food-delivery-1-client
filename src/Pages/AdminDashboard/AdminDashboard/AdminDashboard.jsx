@@ -40,7 +40,7 @@ const AdminDashboard = () => {
           </div>
         </div>
         <div className="w-full border-2 border-[#ff2200] px-4 py-6 rounded-xl text-center">
-        <h3 className="text-2xl text-black">Orders</h3>
+          <h3 className="text-2xl text-black">Orders</h3>
           <div className="flex gap-5 items-center justify-center mt-3">
             <MdBorderColor className="text-5xl text-[#ff2200]" />
             <h5 className="text-5xl text-black">292</h5>

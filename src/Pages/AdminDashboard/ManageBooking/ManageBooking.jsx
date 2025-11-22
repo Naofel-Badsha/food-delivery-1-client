@@ -12,7 +12,7 @@ const ManageBooking = () => {
     queryKey: ["orders", user?.email],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/payments?email=${user?.email}`
+        `https://food-delivery-1-server.vercel.app/payments?email=${user?.email}`
       );
       return res.json();
     },
@@ -33,7 +33,7 @@ const ManageBooking = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/payments/${item._id}`, {
+        fetch(`https://food-delivery-1-server.vercel.app/payments/${item._id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

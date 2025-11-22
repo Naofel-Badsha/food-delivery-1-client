@@ -16,7 +16,7 @@ import SpecialDishesCard from "./SpecialDishesCard";
 const SpecialDishes = () => {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/menu")
+    fetch("https://food-delivery-1-server.vercel.app/menu")
       .then((res) => res.json())
       .then((data) => {
         const specials = data.filter((item) => item.category === "popular");
@@ -28,11 +28,15 @@ const SpecialDishes = () => {
 
 
   return (
-    <div className="container m-auto my-16 px-6">
+    <section className="container m-auto my-16 px-6">
       <div className="text-left py-8">
         <h5 className="subTitle">Customer Favorites</h5>
-        <h1 className="title md:w-[380px] lg:w-[520px]">Special Dishes Form Our Menu</h1>
-        <h3 className="text-xl text-sky-600 font-bold">Special Dishes Items: {recipes.length}</h3>
+        <h1 className="title md:w-[380px] lg:w-[520px]">
+          Special Dishes Form Our Menu
+        </h1>
+        <h3 className="text-xl text-sky-600 font-bold">
+          Special Dishes Items: {recipes.length}
+        </h3>
       </div>
       <Swiper
         modules={[Autoplay]}
@@ -59,18 +63,14 @@ const SpecialDishes = () => {
           {/*-----------Slider-------1-------*/}
           {recipes.map((item, i) => (
             <SwiperSlide>
-            <SpecialDishesCard
-              key={i} item={item}
-            ></SpecialDishesCard>
+              <SpecialDishesCard key={i} item={item}></SpecialDishesCard>
             </SwiperSlide>
           ))}
         </div>
       </Swiper>
 
-
-
       {/*-------Slider----Card-------*/}
-    </div>
+    </section>
   );
 };
 

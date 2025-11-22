@@ -35,14 +35,17 @@ const Categories = () => {
   ];
 
   return (
-    <div className="container m-auto py-16">
+    <section className="container m-auto py-16">
       <div className="text-center">
         <h5 className="subTitle">Customer Favorites</h5>
         <h1 className="title">Popular Category</h1>
       </div>
 
       {/*-----------container-----*/}
-      <div className="flex flex-col md:flex-row  flex-wrap gap-8 justify-around items-center mt-12" data-aos="fade-right" >
+      <div
+        className="flex flex-col md:flex-row  flex-wrap gap-8 justify-around items-center mt-12"
+        data-aos="fade-right"
+      >
         {categoryriesItems.map((item, i) => (
           <div
             key={i}
@@ -61,7 +64,7 @@ const Categories = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

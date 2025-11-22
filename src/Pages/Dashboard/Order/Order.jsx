@@ -5,22 +5,24 @@ import { Link } from "react-router-dom";
 
 const Order = () => {
   const { user } = useContext(AuthContext);
-  const {refetch, data:orders = []} = useQuery({
+  const { refetch, data: orders = [] } = useQuery({
     queryKey: ["orders", user?.email],
     queryFn: async () => {
-        const res = await fetch(`http://localhost:5000/payments?email=${user?.email}`)
-        return res.json();
-      },
+      const res = await fetch(
+        `https://food-delivery-1-server.vercel.app/payments?email=${user?.email}`
+      );
+      return res.json();
+    },
   });
-   console.log(orders)
-   //---------Formate---------date--------
-   const formateDate = (creationTime) => {
-     const createdDate = new Date(creationTime)
-     return createdDate.toLocaleDateString()
-   }
+  console.log(orders);
+  //---------Formate---------date--------
+  const formateDate = (creationTime) => {
+    const createdDate = new Date(creationTime);
+    return createdDate.toLocaleDateString();
+  };
   return (
     <div className="container m-auto">
-    {/*------------Text-------1--------*/}
+      {/*------------Text-------1--------*/}
       <div className="py-10 px-6 flex flex-col justify-center items-center">
         <div className="text-center">
           <h2 className="text-4xl text-black md:text-5xl font-bold md:leading-tight leading-tight">
@@ -44,18 +46,24 @@ const Order = () => {
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody>   
+            <tbody>
               {/*--------Row------1-----By-----Tablle------body-----*/}
               {orders.map((item, index) => (
                 <tr key={index}>
                   <td className="text-black text-xl">{index + 1}</td>
-                  <td className="text-[15px] text-black">{formateDate(item.creationTime)}</td>
-                  <td className="text-[15px] text-black">{item.transitionId}</td>
+                  <td className="text-[15px] text-black">
+                    {formateDate(item.creationTime)}
+                  </td>
+                  <td className="text-[15px] text-black">
+                    {item.transitionId}
+                  </td>
                   <td className="text-[15px] text-black">$: {item.price}</td>
                   <td className="text-[15px] text-black">{item.status}</td>
                   <td>
                     <Link to="/contactUs">
-                    <button className="btn border-0 bg-[#fa4604] text-white text-xl">Contact</button>
+                      <button className="btn border-0 bg-[#fa4604] text-white text-xl">
+                        Contact
+                      </button>
                     </Link>
                   </td>
                   <th></th>

@@ -20,7 +20,7 @@ const DashboardLayouts = () => {
     <>
       <li>
         <Link to="/">
-          <IoHome/> Home
+          <IoHome /> Home
         </Link>
       </li>
       <li>
@@ -46,13 +46,13 @@ const DashboardLayouts = () => {
 
   // const isAdmin = false;
   return (
-    <div>
+    <section>
       {/* {
         isAdmin ? <></> :<></>
       } */}
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col ">
+        <div className="drawer-content flex flex-col">
           {/* Page content here */}
           <div className="flex items-center justify-between gap-6 py-4 px-4">
             <label
@@ -76,7 +76,7 @@ const DashboardLayouts = () => {
             className="drawer-overlay"
           ></label>
           <ul className="menu bg-sky-950 h-screen text-xl text-white w-56 md:w-80 lg:w-80 p-4 gap-6">
-            {/* Sidebar content here */}
+            {/*------Sidebar------Content------Here------*/}
             <div>
               <Link to="updateProfile">
                 <div className="flex items-center justify-center gap-5">
@@ -92,30 +92,31 @@ const DashboardLayouts = () => {
               <h2 className="text-center py-4">{user.displayName}</h2>
               <hr />
             </div>
-
+            {/*--------Done----1-----*/}
             <li>
               <Link to="/dashboard">
                 <MdDashboard /> Dashboard
               </Link>
             </li>
+            {/*--------Done----2-----*/}
             <li>
               <Link to="/manageBooking">
                 <FaShoppingBasket /> Manage Booking
               </Link>
             </li>
-            {/*--------Done----1-----*/}
+            {/*--------Done----3-----*/}
             <li>
               <Link to="/addMenu">
                 <FaPlusCircle /> Add Menu
               </Link>
             </li>
-            {/*--------Done----2-----*/}
+            {/*--------Done----4-----*/}
             <li>
               <Link to="/manageItems">
                 <FaEdit /> Manage Items
               </Link>
             </li>
-            {/*--------Done----3-----*/}
+            {/*--------Done----5-----*/}
             <li>
               <Link to="users">
                 <FaUsers /> All Users
@@ -127,7 +128,7 @@ const DashboardLayouts = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

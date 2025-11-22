@@ -8,7 +8,7 @@ const HomeBanner = () => {
     AOS.init({ duration: "2000" });
   }, []);
   return (
-    <div className="bg-gradient-to-r from-[#fafafa] form-0% to-[#fcfcfc] to-100%">
+    <section className="bg-gradient-to-r from-[#fafafa] form-0% to-[#fcfcfc] to-100%">
       <div className="py-24 px-6 container m-auto flex flex-col md:flex-row-reverse justify-between items-center gap-8">
         {/*------------img-------1--------*/}
         <div className="md:w-1/2 overflow-hidden" data-aos="fade-right">
@@ -74,7 +74,7 @@ const HomeBanner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

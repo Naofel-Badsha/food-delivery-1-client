@@ -1,16 +1,19 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Testimonials = () => {
   useEffect(() => {
-    AOS.init({duration: "2000"}) 
-  },[])
+    AOS.init({ duration: "2000" });
+  }, []);
   return (
-    <div className="container m-auto py-16 px-6">
+    <section className="container m-auto py-16 px-6">
       <div className="flex  flex-col md:flex-row items-center justify-center gap-12  ">
         {/*--------------1--------------*/}
-        <div className="md:w-1/2 bg-gradient-to-r from-[#d06161] form-0% to-[#fcfcfc] to-100%" data-aos="fade-right">
+        <div
+          className="md:w-1/2 bg-gradient-to-r from-[#d06161] form-0% to-[#fcfcfc] to-100%"
+          data-aos="fade-right"
+        >
           <div className="w-full m-auto">
             <img
               src="https://i.ibb.co/DbkctB3/food-test-1.png"
@@ -57,15 +60,18 @@ const Testimonials = () => {
               <div className="space-y-1">
                 <h5 className="text-xl font-semibold">Customer Feedback</h5>
                 <div className="flex items-center gap-2">
-                <i className="fa-solid fa-star text-xl text-[#fa4604]"></i>
-                <span className="font-medium">4.9</span> <span className="text-xl text-slate-500">(20.6k Reviews)</span>
+                  <i className="fa-solid fa-star text-xl text-[#fa4604]"></i>
+                  <span className="font-medium">4.9</span>{" "}
+                  <span className="text-xl text-slate-500">
+                    (20.6k Reviews)
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

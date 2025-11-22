@@ -20,7 +20,7 @@ const AddMenu = () => {
       recipe: data.recipe,
       image: data.image,
     };
-    fetch("http://localhost:5000/menu", {
+    fetch("https://food-delivery-1-server.vercel.app/menu", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -17,7 +17,7 @@ const UpdateMenu = () => {
       recipe: data.recipe,
       image: data.image,
     };
-    fetch(`http://localhost:5000/menu/${item._id}`, {
+    fetch(`https://food-delivery-1-server.vercel.app/menu/${item._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

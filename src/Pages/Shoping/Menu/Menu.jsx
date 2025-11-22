@@ -20,7 +20,7 @@ const Menu = () => {
     //fetch data form the backend
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/menu");
+        const response = await fetch("https://food-delivery-1-server.vercel.app/menu");
         const data = await response.json();
         // console.log(data);
         setMenu(data);

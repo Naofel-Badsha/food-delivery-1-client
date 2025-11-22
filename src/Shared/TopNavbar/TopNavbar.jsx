@@ -3,16 +3,23 @@ import { Link } from "react-router-dom";
 
 const TopNavbar = () => {
   return (
-    <div className=" py-3 px-6 container m-auto">
-      <div className="flex gap-4 items-center justify-between flex-col lg:flex-row">
+    <div className="px-3 container m-auto">
+      <div className="flex gap-4 py-3 items-center justify-between flex-col lg:flex-row">
         {/*-----------Logo----------*/}
         <div className="">
-          <img src="https://i.ibb.co/zQWFgXn/logo-ff.png" className="w-40" />
+          <h1 className="text-xl font-bold">
+            <span className="text-[#FA4604] text-4xl font-bold rotate-3">G</span>ood
+            <span className="text-[#FA4604] text-4xl font-bold rotate-3">F</span>ood
+          </h1>
         </div>
         {/*-----------Searce----------*/}
-        <div className="w-full">
-          <label className="input bg-[#4d5b6f] text-xl text-white input-bordered flex items-center gap-2">
-            <input type="search" className="grow w-full" placeholder="Search " />
+        <div className="">
+          <label className="input bg-gray-100 text-xl text-white input-bordered flex items-center">
+            <input
+              type="search"
+              className="grow w-full text-black text-[16px]"
+              placeholder="Search "
+            />
             <i className="fa-solid fa-magnifying-glass text-2xl text-[#fa4604]"></i>
           </label>
         </div>
